@@ -14,7 +14,8 @@ public class CameraFollow : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.FindWithTag("Player").transform;
+         player = GameObject.FindWithTag("Player").transform;
+        //Debug.Log("The selected index: " + GameManager.instance.CharIndex);
     }
 
     private void LateUpdate() // lateupdate runs when all calculations are done in update
